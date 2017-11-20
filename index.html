@@ -6,69 +6,95 @@
   <title>Maciej Dubiński - Dorabianie Kluczy, Otwieranie Zamków</title>
   <link rel="stylesheet" href="css/bootstrap-reboot.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 
 
 </head>
 <body>
-  <!--NAVBAR-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">NAZWA FIRMY</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<!--NAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-dark nav-bar" style="background-color: #007bff;">
+  <a class="navbar-brand" href="#">NAZWA FIRMY</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">O nas</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Usługi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Kontakt</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!--JUMBOTRON-->
-  <div class="jumbotron" id="about">
-    <h1 class="display-3">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr class="my-4">
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">O nas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Usługi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Kontakt</a>
+      </li>
+    </ul>
   </div>
+</nav>
+
+<!--JUMBOTRON-->
+<div class="jumbotron about" id="about">
+  <h1 class="display-3">Maciej Kluczyński</h1>
+  <p class="lead">Potrzebujesz dorobić klucz lub otworzyć zamek w drzwiach czy samochodzie?</p>
+  <hr class="my-4">
+  <p>Otwieramy zamki, kłódki i samochody. Dorabiamy klucze do zamków jak i samochodów. Mamy ponad 700 rodzajów
+    kluczy</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#contact" role="button">KONTAKT</a>
+  </p>
+</div>
+<!--LOKALIZACJA-->
+<section class="container-fluid localization">
+  <header class="localization__header">
+    <h2 class="localization__header__title">Jak do nas trafić?</h2>
+  </header>
+
+
+</section>
 
 <!--USLUGI-->
-  <section class="container services">
-    <h1>
+<section class="container-fluid services" id="services">
+  <h1>
 
-    </h1>
-    <p>
+  </h1>
+  <p>
 
-    </p>
-  </section>
-<!--CENNIK-->
-  <section class="container ">
-    <h1>
+  </p>
+</section>
 
-    </h1>
-    <p>
-
-    </p>
-  </section>
 <!--KONTAKT-->
-  <section class="container contact">
-    <h1>
-
-    </h1>
-    <p>
-
-    </p>
-  </section>
+<section class="container-fluid contact" id="contact">
+  <header class="contact__header">
+    <h2 class="contact__header__title">Bądźmy w kontakcie<span class="contact__header__subtitle">Masz jakieś
+      pytanie?</span>
+    </h2>
+    <p class="contact__header__paragraph">Wyślij do nas wiadomość</p>
+  </header>
+  <form class="contact__form" name="contact-form" id="form" action=""
+        method="post">
+    <fieldset class="contact__form__fieldset">
+      <div class="contact__form__fieldset__field">
+        <label class="contact__form__fieldset__label" for="form-name">Imię</label>
+        <input class="contact__form__fieldset__input" type="text" id="form-name" name="fullname"
+               placeholder="Jan Kowalski">
+      </div>
+      <div class="contact__form__fieldset__field">
+        <label class="contact__form__fieldset__label" for="form-email">E-mail</label>
+        <input class="contact__form__fieldset__input" type="email" id="form-email" name="email"
+               placeholder="przyklad@gdansk.pl">
+      </div>
+      <div class="contact__form__fieldset__field">
+        <label class="contact__form__fieldset__label" for="form-message">Wiadomość</label>
+        <textarea class="contact__form__fieldset__textarea" id="form-message" name="message"
+                  placeholder="Jak brzmi Twoje pytanie?"></textarea>
+      </div>
+      <div class="contact__form__fieldset__field">
+        <input class="contact__form__fieldset__button" type="submit" value="Wyślij">
+      </div>
+    </fieldset>
+  </form>
+</section>
 </body>
 </html>
