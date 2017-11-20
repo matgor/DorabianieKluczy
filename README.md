@@ -1,3 +1,3 @@
 # DorabianieKluczy
 
-Strona dla firmy dorabiającej klucze
+Site for keymakers
