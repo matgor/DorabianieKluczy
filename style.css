@@ -15,7 +15,7 @@
 .header__subtitle {
     display: block;
     font-family: 'Libre Baskerville',serif;
-    font-size: 0.7em;
+    font-size: 0.5em;
     font-weight: 100;
     font-style: italic;
     color: #ffffff;
@@ -56,12 +56,24 @@
 
 /*JUMBOTRON*/
 .about {
-    height: 100vh;
+    min-height: 100vh;
     border: 20px solid;
     border-color: white;
     background-color: #d6d6d6;
     background-image: url("imgs/jumbotron-background.jpeg");
     background-size: cover;
+}
+.display-3 {
+    font-weight: 500;
+    font-family: "Abril Fatface",serif;
+}
+.lead {
+    font-weight: 500;
+}
+.about-header {
+    font-family: 'Abril Fatface',serif;
+    font-weight: 300;
+    padding-top: 30px;
 }
 /*LOCALIZATION*/
 .localization {
@@ -94,52 +106,52 @@
 .row {
     margin: auto;
 }
-/*.contact__form {*/
-    /*width: 100%;*/
-    /*margin-bottom: 50px;*/
-/*}*/
-/*.contact__form__fieldset {*/
-    /*border: none;*/
-    /*margin: auto;*/
-    /*padding: 0;*/
-    /*max-width: 700px;*/
-/*}*/
-/*.contact__form__fieldset__field {*/
-    /*width: 100%;*/
-    /*margin-bottom: 20px;*/
-    /*!*border: 1px solid;*!*/
+.contact__form {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contact__form__fieldset {
+    border: none;
+    margin: auto;
+    padding: 0;
+    max-width: 700px;
+}
+.contact__form__fieldset__field {
+    width: 100%;
+    margin-bottom: 20px;
+    /*border: 1px solid;*/
 
-/*}*/
-/*.contact__form__fieldset__label {*/
-    /*display: block;*/
-    /*padding-bottom: 10px;*/
-    /*color: #ffffff;*/
-/*}*/
-/*.contact__form__fieldset__input {*/
-    /*display: block;*/
-    /*padding: 20px;*/
-    /*width: 100%;*/
-    /*border: 4px solid #ffffff;*/
-    /*border-radius: 4px;*/
-    /*box-shadow: 0 3px 0 rgba(0,0,0,.5);*/
-/*}*/
-/*.contact__form__fieldset__textarea {*/
-    /*display: block;*/
-    /*padding: 20px;*/
-    /*width: 100%;*/
-    /*border: 4px solid #fff;*/
-    /*border-radius: 4px;*/
-    /*box-shadow: 0 3px 0 rgba(0,0,0,.5);*/
-    /*min-height: 200px;*/
-/*}*/
-/*.contact__form__fieldset__button {*/
-    /*background-color: #1b346c;*/
-    /*color: #ffffff;*/
-    /*font-size: 1rem;*/
-    /*border: 4px solid;*/
-    /*border-radius: 4px;*/
-    /*border-color: #bdc0c6;*/
-    /*padding: 20px 40px;*/
-    /*margin-top: 1.25rem;*/
-    /*cursor: pointer;*/
-/*}*/
+}
+.contact__form__fieldset__label {
+    display: block;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+.contact__form__fieldset__input {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    border: 4px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 rgba(0,0,0,.5);
+}
+.contact__form__fieldset__textarea {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    border: 4px solid #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 rgba(0,0,0,.5);
+    min-height: 200px;
+}
+.contact__form__fieldset__button {
+    background-color: #1b346c;
+    color: #ffffff;
+    font-size: 1rem;
+    border: 4px solid;
+    border-radius: 4px;
+    border-color: #bdc0c6;
+    padding: 20px 40px;
+    margin-top: 1.25rem;
+    cursor: pointer;
+}

@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Maciej Dubiński - Dorabianie Kluczy, Otwieranie Zamków</title>
+  <title>KLUCZ-LAB - Dorabianie kluczy, naprawa i otwieranie zamków</title>
   <link rel="stylesheet" href="css/bootstrap-reboot.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 
 </head>
 <body>
 <!--NAVBAR-->
 <nav class="navbar navbar-expand-lg navbar-dark nav-bar fixed-top" style="background-color: #007bff;">
-  <a class="navbar-brand" href="#">NAZWA FIRMY</a>
+  <a class="navbar-brand" href="#">Klucz-Lab</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -36,11 +36,42 @@
 
 <!--JUMBOTRON-->
 <div class="jumbotron about" id="about">
-  <h1 class="display-3">Maciej Kluczyński</h1>
-  <p class="lead">Potrzebujesz dorobić klucz lub otworzyć zamek w drzwiach czy samochodzie?</p>
+  <h1 class="display-3">KLUCZ-LAB</h1>
+  <p class="lead">Potrzebujesz dorobić klucz lub otworzyć zamek w drzwiach lub samochodzie?</p>
   <hr class="my-4">
-  <p>Otwieramy zamki, kłódki i samochody. Dorabiamy klucze do zamków i samochodów. Mamy ponad 700 rodzajów
-    kluczy</p>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-2">
+      <h4 class="about-header">Adres:</h4>
+      <div class="address-line">
+        Długie Ogrody 21
+      </div>
+      <div class="address-line">
+        80-765 Gdańsk
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-2">
+      <h4 class="about-header">Kontakt:</h4>
+      <div class="address-line">
+        <a class="link-phone" href="tel:+48-733-260-061" dir="ltr" data-tracking-element-type="3">733 260 061</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-2">
+    <dl class="map-info map-info-hours" id="hours">
+      <dt class="about-header"><h4>Godziny pracy:</h4></dt>
+      <dd class="map-info__item">
+        <dl class="map-info__hours">
+          <dt class="map-info__hours-head">pon. - pt.</dt>
+          <dd class="map-info__hours-value"><span class="map-info__hours-unit">09:00–17:00</span></dd>
+          <dt class="map-info__hours-head">sob.</dt>
+          <dd class="map-info__hours-value"><span class="map-info__hours-unit">10:00–14:00</span></dd>
+          <dt class="map-info__hours-head">niedz.</dt>
+          <dd class="map-info__hours-value"><span class="map-info__hours-unit">Nieczynne</span></dd>
+        </dl>
+      </dd>
+    </dl>
+  </div>
   <p class="lead">
     <a class="btn btn-primary btn-lg" href="#localization" role="button">LOKALIZACJA</a>
   </p>
@@ -123,31 +154,29 @@
     </h2>
     <p class="paragraph">Wyślij do nas wiadomość</p>
   </header>
-
-
-  <!--<form class="contact__form" name="contact-form" id="form" action=""-->
-  <!--method="post">-->
-  <!--<fieldset class="contact__form__fieldset">-->
-  <!--<div class="contact__form__fieldset__field">-->
-  <!--<label class="contact__form__fieldset__label" for="form-name">Imię</label>-->
-  <!--<input class="contact__form__fieldset__input" type="text" id="form-name" name="fullname"-->
-  <!--placeholder="Jan Kowalski">-->
-  <!--</div>-->
-  <!--<div class="contact__form__fieldset__field">-->
-  <!--<label class="contact__form__fieldset__label" for="form-email">E-mail</label>-->
-  <!--<input class="contact__form__fieldset__input" type="email" id="form-email" name="email"-->
-  <!--placeholder="przyklad@gdansk.pl">-->
-  <!--</div>-->
-  <!--<div class="contact__form__fieldset__field">-->
-  <!--<label class="contact__form__fieldset__label" for="form-message">Wiadomość</label>-->
-  <!--<textarea class="contact__form__fieldset__textarea" id="form-message" name="message"-->
-  <!--placeholder="Jak brzmi Twoje pytanie?"></textarea>-->
-  <!--</div>-->
-  <!--<div class="contact__form__fieldset__field">-->
-  <!--<input class="contact__form__fieldset__button" type="submit" value="Wyślij">-->
-  <!--</div>-->
-  <!--</fieldset>-->
-  <!--</form>-->
+  <form class="contact__form" name="contact-form" id="form" action=""
+        method="post">
+    <fieldset class="contact__form__fieldset">
+      <div class="contact__form__fieldset__field">
+        <label class="contact__form__fieldset__label" for="form-name">Imię</label>
+        <input class="contact__form__fieldset__input" type="text" id="form-name" name="fullname"
+               placeholder="Jan Kowalski">
+      </div>
+      <div class="contact__form__fieldset__field">
+        <label class="contact__form__fieldset__label" for="form-email">E-mail</label>
+        <input class="contact__form__fieldset__input" type="email" id="form-email" name="email"
+               placeholder="przyklad@gdansk.pl">
+      </div>
+      <div class="contact__form__fieldset__field">
+        <label class="contact__form__fieldset__label" for="form-message">Wiadomość</label>
+        <textarea class="contact__form__fieldset__textarea" id="form-message" name="message"
+                  placeholder="Jak brzmi Twoje pytanie?"></textarea>
+      </div>
+      <div class="contact__form__fieldset__field">
+        <input class="contact__form__fieldset__button" type="submit" value="Wyślij">
+      </div>
+    </fieldset>
+  </form>
 </section>
 </body>
 </html>
