@@ -63,9 +63,14 @@
     background-image: url("imgs/jumbotron-background.jpeg");
     background-size: cover;
 }
+.btn-primary {
+    background-color: #282c35;
+    border-color: #282c35;
+}
 .display-3 {
     font-weight: 500;
     font-family: "Abril Fatface",serif;
+    color: #282c35;
 }
 .lead {
     font-weight: 500;
@@ -74,19 +79,24 @@
     font-family: 'Abril Fatface',serif;
     font-weight: 300;
     padding-top: 30px;
+    color: #282c35;
 }
 /*LOCALIZATION*/
 .localization {
-    height: 100vh;
     margin-top: -60px;
     border: 20px solid;
     border-color: white;
-    background-color: #d6d6d6;
+    background-color: #282c35;
+}
+.localization__map {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 140px;
 }
 
 /*SERVICES*/
 .services {
-    height: 100vh;
+    min-height: 100vh;
     margin-top: -80px;
     border: 20px solid;
     border-color: white;
@@ -97,7 +107,7 @@
 /*CONTACT*/
 
 .contact {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-color: #1b346c;
     margin-top: -20px;
     border: 20px solid;

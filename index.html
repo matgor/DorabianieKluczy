@@ -12,7 +12,7 @@
 </head>
 <body>
 <!--NAVBAR-->
-<nav class="navbar navbar-expand-lg navbar-dark nav-bar fixed-top" style="background-color: #007bff;">
+<nav class="navbar navbar-expand-lg navbar-dark nav-bar fixed-top" style="background-color: #282c35;">
   <a class="navbar-brand" href="#">Klucz-Lab</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +37,7 @@
 <!--JUMBOTRON-->
 <div class="jumbotron about" id="about">
   <h1 class="display-3">KLUCZ-LAB</h1>
-  <p class="lead">Potrzebujesz dorobić klucz lub otworzyć zamek w drzwiach lub samochodzie?</p>
+  <p class="lead">Dorabianie i programowanie kluczy, otwieranie zamków i stacyjek, awaryjne otwieranie.</p>
   <hr class="my-4">
   <div class="row">
     <div class="col-12 col-md-6 col-lg-2">
@@ -73,16 +73,19 @@
     </dl>
   </div>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#localization" role="button">LOKALIZACJA</a>
+    <a class="btn btn-primary btn-lg"
+       href="https://www.google.com/maps/dir//KLUCZ-LAB+Dorabianie+i+programowanie+kluczy+-+Naprawa+zamk%C3%B3w+i+stacyjek+-+Awaryjne+otwieranie/data=!4m8!4m7!1m0!1m5!1m1!1s0x46fd73a70c3821e7:0x95f0118933be4fba!2m2!1d18.6645345!2d54.347869599999996"
+       target="_blank" role="button">LOKALIZACJA</a>
   </p>
 </div>
 <!--LOKALIZACJA-->
 <section class="container-fluid localization" id="localization">
-  <header class="header">
-    <h2 class="header__title">Jak do nas trafić?</h2>
-  </header>
-
-
+  <div class="container">
+    <header class="header">
+      <h2 class="header__title">Jak do nas trafić?</h2>
+    </header>
+    <div class="localization__map" id="map"></div>
+  </div>
 </section>
 
 <!--USLUGI-->
@@ -178,5 +181,8 @@
     </fieldset>
   </form>
 </section>
+<script src="script.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT5xr9Vz-S1HaFrGIOJPIvgkuoM-q5yFo&callback=initMap"></script>
 </body>
 </html>
