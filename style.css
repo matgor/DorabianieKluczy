@@ -1,15 +1,15 @@
 /*UNIVERSAL*/
 .header {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 1rem;
-    max-width: 700px;
+    max-width: 1200px;
     margin: auto;
 }
 .header__title {
     font-family: "Abril Fatface", serif;
     font-size: 3em;
-    font-weight: 100;
+    font-weight: lighter;
     line-height: 1.6;
     color: #ffffff;
     padding-top: 10px;
@@ -17,10 +17,11 @@
 .header__subtitle {
     display: block;
     font-family: 'Libre Baskerville',serif;
-    font-size: 0.5em;
+    font-size: 0.4em;
     font-weight: 100;
     font-style: italic;
     color: #ffffff;
+    text-align: left;
 }
 .header__paragraph__link {
     color: #ffffff;
@@ -61,7 +62,6 @@
 .about {
     min-height: 100vh;
     margin-bottom: 0;
-    border-bottom: 20px solid;
     border-color: white;
     background-color: #d6d6d6;
     background-image: url("imgs/jumbotron-background.jpeg");
@@ -75,6 +75,7 @@
     font-weight: 500;
     font-family: "Abril Fatface",serif;
     color: #282c35;
+    margin-top: 30px;
 }
 .lead {
     font-weight: 500;
@@ -87,31 +88,30 @@
 }
 /*LOCALIZATION*/
 .localization {
-    border-bottom: 20px solid;
-    border-color: white;
+    min-height: 100vh;
     background-color: #282c35;
 }
 .localization__map {
     width: 100%;
     height: 600px;
-    margin-bottom: 140px;
+    margin-bottom: -100px;
 }
 
 /*SERVICES*/
 .services {
-    border-color: white;
     background-color: #282c35;
 }
 .services__container {
     margin-bottom: 40px;
 }
+.services__list {
+    padding-bottom: 40px;
+}
 
 /*CONTACT*/
 
 .contact {
-    background-color: #1b346c;
-    border-top: 20px solid;
-    border-color: white;
+    background-color: #282c35;
 }
 .row {
     margin: auto;
@@ -152,7 +152,7 @@
     min-height: 200px;
 }
 .contact__form__fieldset__button {
-    background-color: #1b346c;
+    background-color: #282c35;
     color: #ffffff;
     font-size: 1rem;
     border: 4px solid;
